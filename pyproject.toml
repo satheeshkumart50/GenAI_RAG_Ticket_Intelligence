@@ -1,0 +1,19 @@
+[project]
+name = "ticket_rag"
+version = "0.1.0"
+description = "RAG pipeline for telecom Remedy data"
+requires-python = ">=3.10"
+
+# Add all runtime dependencies here
+dependencies = [
+    "psycopg2>=2.9",
+    "mcp-server>=0.1.0",
+    "ollama>=0.1.6",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["*"]

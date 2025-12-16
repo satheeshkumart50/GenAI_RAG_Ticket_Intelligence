@@ -1,0 +1,40 @@
+# ------------------------
+# Python cache & builds
+# ------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# ------------------------
+# Virtual environments
+# ------------------------
+rag_env/
+.venv/
+venv/
+
+# ------------------------
+# Environment / secrets
+# ------------------------
+.env
+.env.*
+*.key
+
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
+
+# ------------------------
+# IDE / OS
+# ------------------------
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+
+docs/phases.txt
+docs/*.pptx
