@@ -2,8 +2,8 @@ import uuid
 import streamlit as st
 
 from rag.agent_onprem import agent_answer as onpremllm
-from rag.agent_cloud import agent_answer as cloudllm
-from rag.chain_agent_cloud import agent_answer as gemini
+from rag.gemini_nochain import agent_answer as cloudllm
+from rag.gemini_cloud import agent_answer as gemini
 from rag.openai_cloud import agent_answer as openai
 
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory

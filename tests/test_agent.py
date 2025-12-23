@@ -1,4 +1,4 @@
-from rag.agent_cloud import agent_answer as cloudllm
+from rag.gemini_nochain import agent_answer as cloudllm
 from rag.agent_onprem import agent_answer as onpremllm
 
 def run_test_query(query: str):

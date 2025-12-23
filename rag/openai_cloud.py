@@ -37,7 +37,7 @@ if not OPENAI_API_KEY:
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-GPT_MODEL = "gpt-5.2"   # <-- your requested model
+GPT_MODEL = "gpt-5.2"
 
 
 # =====================================================================

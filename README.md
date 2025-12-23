@@ -20,7 +20,7 @@ Tech Stack
 
 - Language: Python
 - Database: PostgreSQL + pgvector
-- LLM: OpenAI Gtpt 5.2/Google Gemini (cloud) / Local LLMs (on-prem)
+- LLM: OpenAI GPT-5.2/Google Gemini (cloud) / Local LLMs (on-prem)
 - Embeddings: Local embedding models via Ollama
 - Frameworks: LangChain, Streamlit
 - Architecture: MCP (Model Context Protocol) implemented using FastAPI

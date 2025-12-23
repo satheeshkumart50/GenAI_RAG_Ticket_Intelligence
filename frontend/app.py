@@ -1,6 +1,6 @@
 import streamlit as st
 from rag.agent_onprem import agent_answer as onpremllm
-from rag.agent_cloud import agent_answer as cloudllm
+from rag.gemini_nochain import agent_answer as cloudllm
 
 # ---------------------------------------------------------
 # AVATARS
