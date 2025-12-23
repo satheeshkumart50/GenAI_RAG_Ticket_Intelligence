@@ -3,7 +3,8 @@ import streamlit as st
 
 from rag.agent_onprem import agent_answer as onpremllm
 from rag.agent_cloud import agent_answer as cloudllm
-from rag.chain_agent_cloud import agent_answer as chain_cloudllm
+from rag.chain_agent_cloud import agent_answer as gemini
+from rag.openai_cloud import agent_answer as openai
 
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.messages import HumanMessage, AIMessage
@@ -84,7 +85,7 @@ st.markdown("""
         }
 
         header[data-testid="stHeader"]::before {
-            content: "Incident Decision Support";
+            content: "Incident Decision Support - GPT-5.0";
             position: absolute;
             left: 50%;
             top: 50%;
@@ -117,8 +118,11 @@ FAQ_QUESTIONS = [
     "Can you provide an analysis of the number of incidents for Dallas that have been closed with the Agent AutoMonitorX or NoiseReducer in the last month?",
     "How many times has hub HUB-D4 been affected this month?",
     "What INC or CRQ is related to INC0325?",
-    "When the CR for this ticket INC0001 start and end?",
-    "provide a breakdown of tickets created every month",
+    "When the CR for this ticket INC0002 start and end?",
+    "what is the root cause of impact on INC0001?",
+    "What was last INC on the node NODE-505?",
+    "provide a graphical view on number of tickets created every month",
+    "Provide breakdown on the number of cancelled tickets per node per month",
 
     # "Summarize INC0002.",
     # "What are the key worklog actions taken?",
@@ -179,7 +183,7 @@ if user_input:
     with st.spinner("..."):
         # Choose which backend you want (cloud or onprem)
         # response = onpremllm(user_input, session_id=SESSION_ID, max_history_turns=12)
-        response = chain_cloudllm(user_input, session_id=SESSION_ID, max_history_turns=12)
+        response = openai(user_input, session_id=SESSION_ID, max_history_turns=12)
 
     # Display assistant message immediately (agent will also store it in LangChain history)
     st.chat_message("assistant", avatar=BOT_AVATAR).markdown(response)

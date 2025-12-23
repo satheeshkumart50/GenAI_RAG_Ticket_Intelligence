@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.7" pages="2">
   <diagram id="AVF7-0hsirY8ShtiPF1n" name="RAG_Pipeline">
-    <mxGraphModel dx="1904" dy="680" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1249" dy="631" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -111,11 +111,8 @@
             <mxPoint x="940" y="680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vL_I4v0Fw5gHLfPYDkp7-54" edge="1" parent="1" source="vL_I4v0Fw5gHLfPYDkp7-13" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;" target="vL_I4v0Fw5gHLfPYDkp7-10" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="890" y="730" as="sourcePoint" />
-            <mxPoint x="940" y="680" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="2Fcjcus0tbGufChiQnpC-1" edge="1" parent="1" source="vL_I4v0Fw5gHLfPYDkp7-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" target="vL_I4v0Fw5gHLfPYDkp7-10">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
